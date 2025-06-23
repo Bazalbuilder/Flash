@@ -1,0 +1,12 @@
+[package]
+name = "bazalbuilder/flash"
+description = "A fork of Dash."
+authors = ["hcollins", "Bazalbuilder (fork)"]
+version = "1.1.0"
+license = "MIT"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+repository = "https://github.com/Bazalbuilder/Flash"
+
+[dev-dependencies]
+Lunit = "bazalbuilder/lunit@0.1.1-alpha"
