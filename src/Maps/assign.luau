@@ -43,8 +43,8 @@
 local Dash = script.Parent.Parent
 local None = require(Dash.Symbols.None)
 local Types = require(Dash.Types)
-local forEach = require(Dash.Arrays.forEach)
-local forEachArgs = require(Dash.Arrays.forEachArgs)
+local forEach = require(Dash.Tables.forEach)
+local forEachArgs = require(Dash.Functions.forEachArgs)
 
 local function assign<Key, Value>(target: Types.Map<Key, Value>, ...: Types.Map<Key, Value>): Types.Map<Key, Value>
 	-- Iterate through the varags in order

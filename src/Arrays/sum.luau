@@ -7,7 +7,7 @@
 		Dash.sum({3, 2, 1}) --> 6
 ]]
 local Dash = script.Parent.Parent
-local reduce = require(Dash.Arrays.reduce)
+local reduce = require(Dash.Tables.reduce)
 
 local function sum(input: { number }): number
 	return reduce(input, function(acc, num)

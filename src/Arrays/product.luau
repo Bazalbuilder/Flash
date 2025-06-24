@@ -7,7 +7,7 @@
 		Dash.product({3, 3, 2}) --> 18
 ]]
 local Dash = script.Parent.Parent
-local reduce = require(Dash.Arrays.reduce)
+local reduce = require(Dash.Tables.reduce)
 
 local function product(input: { number }): number
 	return reduce(input, function(acc, num)

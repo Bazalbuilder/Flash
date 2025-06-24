@@ -13,7 +13,7 @@
 local Dash = script.Parent.Parent
 local None = require(Dash.Symbols.None)
 local Types = require(Dash.Types)
-local forEach = require(Dash.Arrays.forEach)
+local forEach = require(Dash.Tables.forEach)
 local copy = require(Dash.Tables.copy)
 
 -- TODO Luau: Support typing varargs

@@ -8,7 +8,7 @@
 	this has been corrected.
 ]]
 local Dash = script.Parent.Parent
-local assertEqual = require(Dash.Util.assertEqual)
+local assertEqual = require(Dash.Debugging.assertEqual)
 
 local function isUppercase(input: string)
 	assertEqual(#input > 0, true, [[Attempted to call Dash.isUppercase with an empty string]])

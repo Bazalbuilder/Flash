@@ -14,7 +14,7 @@
 ]]
 
 local Dash = script.Parent.Parent
-local assertEqual = require(Dash.Util.assertEqual)
+local assertEqual = require(Dash.Debugging.assertEqual)
 
 export type MapHandler<Key, Value, NewValue> = (Value, Key) -> NewValue
 

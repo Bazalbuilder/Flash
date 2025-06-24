@@ -1,7 +1,10 @@
 --[[
-    Iterates through all elements of a table, and checks if the values in table _input_ is true or false.
+    Iterates through all elements of the _input_ Table.
 
-    Any value that is falsy will result in the whole table being returned as false.
+    Calls the _handler_ for each entry and returns `false` if the handler returns falsy for any
+    element which it is called with. Otherwise, all elements were truthy so return `true`.
+
+    If the handler is not provided, use the truthiness of the values in the table.
 ]]
 
 local Dash = script.Parent.Parent

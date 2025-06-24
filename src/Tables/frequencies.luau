@@ -27,7 +27,7 @@
 		}
 ]]
 local Dash = script.Parent.Parent
-local reduce = require(Dash.Arrays.reduce)
+local reduce = require(Dash.Tables.reduce)
 
 type FrequenciesHandler<Key, Value, NewKey> = (Value, Key) -> NewKey
 

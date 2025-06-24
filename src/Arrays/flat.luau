@@ -5,7 +5,7 @@
 ]]
 local Dash = script.Parent.Parent
 local append = require(Dash.Arrays.append)
-local forEach = require(Dash.Arrays.forEach)
+local forEach = require(Dash.Tables.forEach)
 
 -- TODO Luau: Support function generics
 local function flat(input: { any }): { any }

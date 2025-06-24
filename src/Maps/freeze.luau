@@ -22,7 +22,7 @@
 local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
 local Error = require(Dash.Classes.Error)
-local format = require(Dash.Strings.format)
+local format = require(Dash.Debugging.format)
 
 -- TODO Luau: Improve type inference to make these not need to be any
 local ReadonlyKey: any =

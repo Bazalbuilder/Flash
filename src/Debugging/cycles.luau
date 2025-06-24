@@ -60,9 +60,9 @@ local function cycles(input: any, depth: number?, initialCycles: any): Cycles?
 					return tostring(left) < tostring(right)
 				end
 			end)
-			for _, key in ipairs(inputKeys) do
-				local value = input[key]
-				if includes(childCycles.omit, key) then
+			for i = 1, #inputKeys do
+				local value = input[i]
+				if includes(childCycles.omit, i) then
 					-- Don't visit omitted keys
 					continue
 				end
@@ -71,10 +71,10 @@ local function cycles(input: any, depth: number?, initialCycles: any): Cycles?
 				-- TYPED: cycles(value, depth and depth - 1 or nil, childCycles)
 				-- Recurse through both the keys and values of the table
 				if depth then
-					cycles(key, depth - 1, childCycles)
+					cycles(i, depth - 1, childCycles)
 					cycles(value, depth - 1, childCycles)
 				else
-					cycles(key, nil, childCycles)
+					cycles(i, nil, childCycles)
 					cycles(value, nil, childCycles)
 				end
 			end

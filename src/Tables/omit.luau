@@ -7,7 +7,7 @@
 ]]
 local Dash = script.Parent.Parent
 local collectSet = require(Dash.Tables.collectSet)
-local forEach = require(Dash.Arrays.forEach)
+local forEach = require(Dash.Tables.forEach)
 
 local function omit<Key, Value>(input: { [Key]: Value }, keys: { Key }): { [Key]: Value }
 	local output = {}

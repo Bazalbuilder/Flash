@@ -20,7 +20,7 @@ local function formatValue(value: any, displayString: string): string
 			.. displayString:sub(displayTypeEnd + 1)
 			.. "s"
 		-- Pretty print values
-		local pretty = require(Dash.Util.pretty)
+		local pretty = require(Dash.Debugging.pretty)
 		if displayType == "#?" then
 			-- Multiline print a value
 			return formatAsString:format(pretty(value, { multiline = true }))

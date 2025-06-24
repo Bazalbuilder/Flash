@@ -26,7 +26,7 @@
 
 local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
-local reduce = require(Dash.Arrays.reduce)
+local reduce = require(Dash.Tables.reduce)
 
 -- Return true if a > b
 type MaxComparator = (any, any) -> boolean
