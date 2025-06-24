@@ -1,7 +1,7 @@
 --[[
 	Returns a function that calls the argument functions in left-right order on an input, passing
 	the return of the previous function as argument(s) to the next.
-		
+
 	@example
 		local function fry(item)
 			return "fried " .. item
@@ -15,8 +15,8 @@
 -- TODO Luau: Support generic functions
 -- TODO Luau: Support varargs
 --: <A>((...A -> ...A)[]) -> ...A -> A
-local Dash = script.Parent
-local identity = require(Dash.identity)
+local Dash = script.Parent.Parent
+local identity = require(Dash.Functions.identity)
 
 local function compose(...)
 	local fnCount = select("#", ...)

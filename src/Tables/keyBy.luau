@@ -6,8 +6,8 @@
 	is used directly as the key itself.
 ]]
 
-local Dash = script.Parent
-local collect = require(Dash.collect)
+local Dash = script.Parent.Parent
+local collect = require(Dash.Tables.collect)
 
 export type KeyByHandler<Key, Value, NewKey> = (Value, Key) -> NewKey
 

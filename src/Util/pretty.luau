@@ -5,17 +5,17 @@
 
 	Optionally use an indented multiline string, limit the depth of tables, omit or pick keys.
 ]]
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
 
-local append = require(Dash.append)
-local assign = require(Dash.assign)
-local cycles = require(Dash.cycles)
-local includes = require(Dash.includes)
-local join = require(Dash.join)
-local map = require(Dash.map)
-local keys = require(Dash.keys)
-local slice = require(Dash.slice)
+local append = require(Dash.Arrays.append)
+local assign = require(Dash.Maps.assign)
+local cycles = require(Dash.Tables.cycles)
+local includes = require(Dash.Tables.includes)
+local join = require(Dash.Maps.join)
+local map = require(Dash.Tables.map)
+local keys = require(Dash.Tables.keys)
+local slice = require(Dash.Arrays.slice)
 
 local concat = table.concat
 local insert = table.insert

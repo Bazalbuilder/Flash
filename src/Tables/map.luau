@@ -13,8 +13,8 @@
 	@see Dash.collectArray if you want to return nil values.
 ]]
 
-local Dash = script.Parent
-local assertEqual = require(Dash.assertEqual)
+local Dash = script.Parent.Parent
+local assertEqual = require(Dash.Util.assertEqual)
 
 export type MapHandler<Key, Value, NewValue> = (Value, Key) -> NewValue
 

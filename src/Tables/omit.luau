@@ -5,9 +5,9 @@
 
 	If the input is a Map, elements are returned in an arbitrary order.
 ]]
-local Dash = script.Parent
-local collectSet = require(Dash.collectSet)
-local forEach = require(Dash.forEach)
+local Dash = script.Parent.Parent
+local collectSet = require(Dash.Tables.collectSet)
+local forEach = require(Dash.Arrays.forEach)
 
 local function omit<Key, Value>(input: { [Key]: Value }, keys: { Key }): { [Key]: Value }
 	local output = {}

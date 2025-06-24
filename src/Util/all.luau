@@ -4,7 +4,7 @@
     Any value that is falsy will result in the whole table being returned as false.
 ]]
 
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
 
 type AllHandler = (any, any) -> boolean

@@ -26,10 +26,10 @@
 		for complete list of formating options and further use cases.
 ]]
 
-local Dash = script.Parent
-local formatValue = require(Dash.formatValue)
-local splitOn = require(Dash.splitOn)
-local startsWith = require(Dash.startsWith)
+local Dash = script.Parent.Parent
+local formatValue = require(Dash.Strings.formatValue)
+local splitOn = require(Dash.Strings.splitOn)
+local startsWith = require(Dash.Strings.startsWith)
 
 local concat = table.concat
 local insert = table.insert

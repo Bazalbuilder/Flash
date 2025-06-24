@@ -8,6 +8,6 @@
 	1. Creating an ordered list with undefined values in it
 	2. Creating a map with a key pointing to a nil value
 ]]
-local Symbol = require(script.Parent.Symbol)
+local Symbol = require(script.Parent.Parent.Classes.Symbol)
 local None = Symbol.new("None")
 return None

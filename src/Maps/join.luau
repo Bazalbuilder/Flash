@@ -5,9 +5,9 @@
 
 	@param ... any number of tables
 ]]
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
-local assign = require(Dash.assign)
+local assign = require(Dash.Maps.assign)
 
 local function join<Key, Value>(...: Types.Map<Key, Value>): Types.Map<Key, Value>
 	return assign({}, ...)

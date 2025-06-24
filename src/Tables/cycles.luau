@@ -3,10 +3,10 @@
 
 	Operates on cyclic structures, and returns a Cycles object for a given _value_ by walking it recursively.
 ]]
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
-local includes = require(Dash.includes)
-local keys = require(Dash.keys)
+local includes = require(Dash.Tables.includes)
+local keys = require(Dash.Tables.keys)
 
 local sort = table.sort
 

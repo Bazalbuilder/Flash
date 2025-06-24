@@ -5,7 +5,7 @@
 	@see Dash.iterator - for an iterator that can iterate over an iterable.
 ]]
 
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
 
 local function iterable(input: Types.Table): Types.AnyFunction

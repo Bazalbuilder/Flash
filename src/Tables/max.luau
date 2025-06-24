@@ -24,9 +24,9 @@
 		) --> "orange"
 ]]
 
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
-local reduce = require(Dash.reduce)
+local reduce = require(Dash.Arrays.reduce)
 
 -- Return true if a > b
 type MaxComparator = (any, any) -> boolean

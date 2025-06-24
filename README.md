@@ -4,13 +4,13 @@
 * This is a fork. I am not the one who created this, all credit goes to Roblox.
 
 # Dash-Community
-A community-supported fork of Dash made by Roblox. You can find the original repository [here](https://github.com/Roblox/dash).
+A community-supported fork of Dash made by Roblox, a library expanding the capabilities of Roblox Luau. You can find the original repository [here](https://github.com/Roblox/dash).
 
 ## Installation
 Flash can be installed by using Wally. Put the following in your `wally.toml`:
 ```toml
 [dependencies]
-Flash = "bazalbuilder/dash-community@1.1.0"
+dash-community = "bazalbuilder/dash-community@1.1.0"
 ```
 
 ## Licensing

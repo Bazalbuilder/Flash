@@ -3,9 +3,9 @@
 
 	Outputs a new array of elements merged from the _input_ array arguments in left-to-right order.
 ]]
-local Dash = script.Parent
-local append = require(Dash.append)
-local forEach = require(Dash.forEach)
+local Dash = script.Parent.Parent
+local append = require(Dash.Arrays.append)
+local forEach = require(Dash.Arrays.forEach)
 
 -- TODO Luau: Support function generics
 local function flat(input: { any }): { any }

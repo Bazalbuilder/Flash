@@ -19,10 +19,10 @@
 	print(drink.syrup) --> nil
 	--!> `MissingKey: Attempt to read missing key "syrup" (a string) of frozen object "Ice Cream"`
 ]]
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
-local Error = require(Dash.Error)
-local format = require(Dash.format)
+local Error = require(Dash.Classes.Error)
+local format = require(Dash.Strings.format)
 
 -- TODO Luau: Improve type inference to make these not need to be any
 local ReadonlyKey: any =

@@ -7,8 +7,8 @@
 	the english alphabet. This function has been implemented to return the expected result once
 	this has been corrected.
 ]]
-local Dash = script.Parent
-local assertEqual = require(Dash.assertEqual)
+local Dash = script.Parent.Parent
+local assertEqual = require(Dash.Util.assertEqual)
 
 local function isLowercase(input: string)
 	assertEqual(#input > 0, true, [[Attempted to call Dash.isLowercase with an empty string]])

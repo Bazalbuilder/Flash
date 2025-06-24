@@ -6,10 +6,10 @@
 	@mutable target
 ]]
 
-local Dash = script.Parent
-local None = require(Dash.None)
-local forEachArgs = require(Dash.forEachArgs)
-local forEach = require(Dash.forEach)
+local Dash = script.Parent.Parent
+local None = require(Dash.Symbols.None)
+local forEachArgs = require(Dash.Arrays.forEachArgs)
+local forEach = require(Dash.Arrays.forEach)
 local insert = table.insert
 
 local function append<T>(target: { T }, ...: { T }?): { T }

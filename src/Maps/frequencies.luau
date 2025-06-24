@@ -26,8 +26,8 @@
 			["Non-neutral"] = 2
 		}
 ]]
-local Dash = script.Parent
-local reduce = require(Dash.reduce)
+local Dash = script.Parent.Parent
+local reduce = require(Dash.Arrays.reduce)
 
 type FrequenciesHandler<Key, Value, NewKey> = (Value, Key) -> NewKey
 

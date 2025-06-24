@@ -10,11 +10,11 @@
 
 	The None symbol can be used to remove an existing value.
 ]]
-local Dash = script.Parent
-local None = require(Dash.None)
+local Dash = script.Parent.Parent
+local None = require(Dash.Symbols.None)
 local Types = require(Dash.Types)
-local forEach = require(Dash.forEach)
-local copy = require(Dash.copy)
+local forEach = require(Dash.Arrays.forEach)
+local copy = require(Dash.Tables.copy)
 
 -- TODO Luau: Support typing varargs
 -- TODO Luau: Support function generics

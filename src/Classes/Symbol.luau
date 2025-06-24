@@ -13,8 +13,8 @@
 	print(CHEESE == FAKE_CHEESE) --> false
 	print(tostring(CHEESE)) --> "Symbol.new(CHEESE)"
 ]]
-local Dash = script.Parent
-local class = require(Dash.class)
+local Dash = script.Parent.Parent
+local class = require(Dash.Classes.class)
 
 local Symbol = class("Symbol", function(name: string)
 	return {

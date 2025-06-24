@@ -4,7 +4,7 @@
 
 	If _handler_ is not provided, values of `input` are used as elements.
 ]]
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
 
 type CollectHandler<Key, Value, NewValue> = (key: Key, value: Value) -> NewValue?

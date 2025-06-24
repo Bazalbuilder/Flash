@@ -7,11 +7,11 @@
 	The `left` and `right` values are available to be referenced in the formatted message.
 ]]
 
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 
 local function assertEqual(left: any, right: any, formattedErrorMessage: string?)
 	if left ~= right then
-		local Error = require(Dash.Error)
+		local Error = require(Dash.Classes.Error)
 		local TypeError =
 			Error.new("AssertError", formattedErrorMessage or `Left "{left}" does not equal right "{right}"`)
 		TypeError:throw({

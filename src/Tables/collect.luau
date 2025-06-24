@@ -5,7 +5,7 @@
 	The handler should return a new `(newKey, value)` tuple to be inserted into the returned Table,
 	or `nil` if no value should be added.
 ]]
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
 
 export type CollectHandler<Key, Value, NewKey, NewValue> = (key: Key, value: Value) -> (NewKey?, NewValue?)

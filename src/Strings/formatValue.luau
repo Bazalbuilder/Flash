@@ -7,7 +7,7 @@
 	@see `format` - for a full description of valid display strings.
 ]]
 
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 
 local function formatValue(value: any, displayString: string): string
 	displayString = displayString or ""
@@ -20,7 +20,7 @@ local function formatValue(value: any, displayString: string): string
 			.. displayString:sub(displayTypeEnd + 1)
 			.. "s"
 		-- Pretty print values
-		local pretty = require(Dash.pretty)
+		local pretty = require(Dash.Util.pretty)
 		if displayType == "#?" then
 			-- Multiline print a value
 			return formatAsString:format(pretty(value, { multiline = true }))

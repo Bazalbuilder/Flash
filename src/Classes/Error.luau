@@ -8,20 +8,20 @@
 	thrown, and later passed to a logging endpoint.
 
 	Throwing an error instance captures its stack trace, avoiding the need to explicitly use xpcall.
-	
+
 	@usage In general, errors should not be used during normal control flow.
 ]]
-local Dash = script.Parent
+local Dash = script.Parent.Parent
 local Types = require(Dash.Types)
-local class = require(Dash.class)
-local format = require(Dash.format) :: <T...>(string, T...) -> string
-local join = require(Dash.join)
+local class = require(Dash.Classes.class)
+local format = require(Dash.Strings.format) :: <T...>(string, T...) -> string
+local join = require(Dash.Maps.join)
 
 --[[
 	Create a new Error instance.
 	@param name The name of the error
 	@param string A message for the error which will be formatted using Dash.format
-	@param tags Any fixed tags 
+	@param tags Any fixed tags
 ]]
 local Error = class("Error", function(name: string, message: string, tags: Types.Table?)
 	return {
