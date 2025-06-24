@@ -10,7 +10,7 @@ A community-supported fork of Dash made by Roblox, a library expanding the capab
 Flash can be installed by using Wally. Put the following in your `wally.toml`:
 ```toml
 [dependencies]
-dash-community = "bazalbuilder/dash-community@1.1.0"
+dash-community = "bazalbuilder/dash-community@2.0.0"
 ```
 
 ## Licensing
