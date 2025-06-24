@@ -1,3 +1,9 @@
+--[[
+    Iterates through all elements of a table, and checks if the values in table _input_ is true or false.
+
+    Any value that is falsy will result in the whole table being returned as false.
+]]
+
 local Dash = script.Parent
 local Types = require(Dash.Types)
 

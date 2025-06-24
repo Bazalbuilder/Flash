@@ -22,7 +22,7 @@
 	@example
 		format("The color blue is #{:06X}", 255) -> "The color blue is #0000FF"
 	@usage Escape `{` with `{{` and `}` similarly with `}}`.
-	@usage See [https://developer.roblox.com/articles/Format-String](https://developer.roblox.com/articles/Format-String)
+	@usage See [https://create.roblox.com/docs/luau/strings](https://create.roblox.com/docs/luau/strings)
 		for complete list of formating options and further use cases.
 ]]
 

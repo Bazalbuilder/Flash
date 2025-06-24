@@ -6,6 +6,9 @@
 			"$className": "ReplicatedStorage",
 			"Dash": {
 				"$path": "src"
+			},
+			"Lunit": {
+				"$path": "DevPackages/_Index/bazalbuilder_lunit@0.1.1-alpha/lunit/src"
 			}
 		}
 	}
