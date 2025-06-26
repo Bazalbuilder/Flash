@@ -7,7 +7,7 @@
 A community-supported fork of Dash made by Roblox, a library expanding the capabilities of Roblox Luau. You can find the original repository [here](https://github.com/Roblox/dash).
 
 ## Installation
-Flash can be installed by using Wally. Put the following in your `wally.toml`:
+`dash-community` can be installed by using Wally. Put the following in your `wally.toml`:
 ```toml
 [dependencies]
 dash-community = "bazalbuilder/dash-community@2.0.0"
