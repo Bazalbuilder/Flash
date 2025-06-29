@@ -7,11 +7,21 @@
 A community-supported fork of Dash made by Roblox, a library expanding the capabilities of Roblox Luau. You can find the original repository [here](https://github.com/Roblox/dash).
 
 ## Installation
-`dash-community` can be installed by using Wally. Put the following in your `wally.toml`:
+`dash-community` can be installed by using Wally.
+
+Put the following in your `wally.toml`:
 ```toml
 [dependencies]
 dash-community = "bazalbuilder/dash-community@2.0.0"
 ```
+
+You also need Lunit as a dependency. Add this to your `wally.toml`:
+```toml
+[dev-dependencies]
+dash-community = "bazalbuilder/lunit@0.2.0-alpha"
+```
+
+If you do not want to install Lunit, remove Lunit from `default.project.json`.
 
 ## Licensing
 As the original repository is licensed, this fork is licensed under MIT.
